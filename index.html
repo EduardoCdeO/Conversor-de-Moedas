@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="/static/style.css" rel="stylesheet">
+  <link rel="icon" href="/static/img/icon-moeda-16.png">
+  <title>Conversor de Moedas</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <img class="col-sm-6 col-md-5 col-lg-4 col-lg-3 col-xl-3 col-xxl-3" src="/static/img/logo.png" alt="Logo ">
+    </div>
+
+    <h1>Conversor de Moedas</h1>
+
+    <div data-js="currencies-container" class="row justify-content-center mb-4 mt-4">
+      <div class="col-sm-3 col-lg-2">
+        <select data-js="currency-one" class="form-select"></select>
+      </div>
+
+      <div class="col-sm-3 col-lg-2">
+        <select data-js="currency-two" class="form-select"></select>
+      </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center mb-4 mt-4">
+      <div class="col-sm-3 col-md-2">
+        <input data-js="currency-one-times" type="number" min="1" class="form-control form-control-lg" value="1">
+      </div>
+
+      <div class="col-sm-3 col-md-2">
+        <p data-js="converted-value" class="converted-value fs-1 text-center mb-0"></p>
+      </div>
+
+      <p data-js="conversion-precision" class="conversion-precision text-center m-4"></p>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="text-center">
+        &copy; <strong>Conversor de Moedas</strong>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+
+</html>
